@@ -1,0 +1,140 @@
+<header class="font-sans w-full overflow-x-hidden">
+  <!-- !st rectangle at the top -->
+  <div class="w-full h-20 flex items-center justify-around border-b-2">
+    <div class="h-10 w-18">
+      <img src="/assets/Bitmap.png" alt="societe image" />
+    </div>
+    <p class="text-black font-bold text-base text-justify uppercase">
+      Platforme de traitement des candidatures
+    </p>
+    <div class="flex items-center space-x-2">
+      <div
+        class="w-6 h-6 bg-smallBtn rounded-full flex items-center justify-center text-white text-xs"
+      >
+        LA
+      </div>
+      <span class="text-sm text-black">Lisa ATHANE</span>
+      <button class="flex items-end pl-10">
+        <img src="/assets/sign-out-option.png" alt="sign out" />
+      </button>
+    </div>
+  </div>
+  <!-- second rectanglw witht he divisions containing links -->
+  <nav>
+    <div class="w-full mx-auto h-14 border-b-2">
+      <ul
+        class="w-full cursor-pointer h-full font-bold flex items-center list-none uppercase text-xs justify-around"
+      >
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center justify-center"
+        >
+          <a routerLink="/"><img src="/assets/home-logo.png" alt="home" /></a>
+        </li>
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center justify-center"
+        >
+          <a routerLink="/form">offres disponibles</a>
+        </li>
+        <li
+          class="border-l border-r border-navborder  bg-active flex-1 h-full flex items-center justify-center"
+        >
+          <a routerLink="/status">vos candidatures</a>
+        </li>
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center justify-center"
+        >
+          votre cv
+        </li>
+
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center relative justify-center"
+        >
+          <div class="absolute border-x border-navborder h-full right-[calc(15%)]"></div>
+          parametres
+        </li>
+      </ul>
+    </div>
+    <div class="border-2 border-gray-500"></div>
+  </nav>
+</header>
+<!-- end of header -->
+
+<!-- table section -->
+<section class="w-9/10 mx-auto font-sans mb-10 mt-14">
+<h4 class="text-3xl text-black w-1/2"><span class="text-smallBtn mr-2">|</span> Vos candidatures</h4>
+
+<div class="w-full mt-4">
+  <table class="w-full shadow-sm border border-lighter">
+    <thead class="text-formtable border border-lighter text-xs uppercase">
+      <tr class="space-y-8">
+        <th class="w-1/5 p-2">de l'offre</th>
+        <th class="w-1/5 p-2">INTITULÉ de l'offre</th>
+        <th class="w-1/5 p-2">Date de MISE au ligne</th>
+        <th class="w-1/5 p-2">status de la candidature</th>
+        <th class="w-1/5 p-2">Retour RH</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-white m-5 p-5 text-sm text-center text-black border-b-2 border-lighter space-y-8">
+        <td class="w-1/5 p-2">3234</td>
+        <td class="w-1/5 p-2">Chef de service déploiement</td>
+        <td class="w-1/5 p-2">13/08/2018</td>
+        <td class="w-1/5 p-2">En cours</td>
+        <td class="w-1/5 p-2 text-pending">Entretien le 31/08/2018</td>
+      </tr>
+      <tr class="bg-white text-sm text-center text-black border-b-2 border-lighter space-y-8">
+        <td class="w-1/5 p-2">3237</td>
+        <td class="w-1/5 p-2">Contôleur de Gestion</td>
+        <td class="w-1/5 p-2">14/08/2018</td>
+        <td class="w-1/5 p-2">Entretien le 31/08/2018</td>
+        <td class="w-1/5 p-2 text-rejected">Rejetée</td>
+      </tr>
+      <tr class="bg-white text-sm text-center text-black border-b-2 border-lighter space-y-8">
+        <td class="w-1/5 p-2">3237</td>
+        <td class="w-1/5 p-2">Conseillère clientelle</td>
+        <td class="w-1/5 p-2">14/08/2018</td>
+        <td class="w-1/5 p-2">Entretien le 08/08/2018</td>
+        <td class="w-1/5 p-2 text-accepted">Accepté</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="w-full bg-light mt-8 p-8">
+<h3 class="w-3/4 mx-auto mt-4 text-3xl"><span class="text-smallBtn">|</span> Offres similaires</h3>
+<div class="w-3/4 mx-auto mt-2">
+  <div class="w-full mt-4">
+    <div class="w-full mt-4 h-30 border pl-5 pt-2 shadow-md bg-white border-light">
+      <p class="text-smallBtn text-base">CDD</p>
+      <p class="text-2xl mt-1">International Marketing Project Manager H/F</p>
+      <p class="text-base mt-2"><span><i class="fa-solid fa-location-dot mr-2"></i></span> Brazzaville</p>
+    </div>
+    <div class="w-full mt-4 h-30 border pl-5 pt-2 shadow-md bg-white border-light">
+      <p class="text-smallBtn text-base">CDD</p>
+      <p class="text-2xl mt-1">Contrôleur de Gestion Sociale H/F</p>
+      <p class="text-base mt-2"><span><i class="fa-solid fa-location-dot mr-2"></i></span> Point-Noire</p>
+    </div>
+    <div class="w-full mt-4 h-30 border pl-5 pt-2 shadow-md bg-white border-light">
+      <p class="text-smallBtn text-base">CDD</p>
+      <p class="text-2xl mt-1">International Marketing Project Manager H/F</p>
+      <p class="text-base mt-2"><span><i class="fa-solid fa-location-dot mr-2"></i></span> Brazzaville</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- footer section -->
+<footer class="w-full font-sans h-91 bg-light mb-4">
+  <div class="w-full h-2/3 ml-10 flex flex-col justify-around">
+    <h4 class="text-footer mt-4">NOUS CONTACTER</h4>
+    <p class="">Nous appeler : <a href="tel:(242) 06 504 22 22">(242) 06 504 22 22</a></p>
+    <p>Nous écrire : <a href="mailto:sgc.qualite@socgen.com">sgc.qualite&#64;socgen.com</a></p>
+    <p>Trouver une agence</p>
+  </div>
+  <div class=" w-full h-1/3 mt-5 relative">
+    <img src="/assets/Bitmap-footer.png" alt="footer picture" class="object-cover w-full h-full">
+    <span class="absolute top-[calc(0%-25px)] left-[calc(50%-15px)]"><img src="/assets/Group 15.png" alt="top"></span>
+  </div>
+</footer>
+<!-- footer section end -->

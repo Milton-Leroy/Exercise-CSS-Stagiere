@@ -1,0 +1,329 @@
+<header class="font-sans w-full overflow-x-hidden">
+  <!-- !st rectangle at the top -->
+  <div class="w-full h-20 flex items-center justify-around border-b-2">
+    <div class="h-10 w-18">
+      <img src="/assets/Bitmap.png" alt="societe image" />
+    </div>
+    <p class="text-black font-bold text-base text-justify uppercase">
+      Platforme de traitement des candidatures
+    </p>
+    <div class="flex items-center space-x-2">
+      <div
+        class="w-6 h-6 bg-smallBtn rounded-full flex items-center justify-center text-white text-xs"
+      >
+        LA
+      </div>
+      <span class="text-sm text-black">Lisa ATHANE</span>
+      <button class="flex items-end pl-10">
+        <img src="/assets/sign-out-option.png" alt="sign out" />
+      </button>
+    </div>
+  </div>
+  <!-- second rectanglw witht he divisions containing links -->
+  <nav>
+    <div class="w-full mx-auto h-14 border-b-2">
+      <ul
+        class="w-full cursor-pointer h-full font-bold flex items-center list-none uppercase text-xs justify-around"
+      >
+        <li
+          class="border-lborder-r border-navborder flex-1 h-full flex items-center justify-center"
+        >
+          <a routerLink="/"><img src="/assets/home-logo.png" alt="home" /></a>
+        </li>
+        <li
+          class="border-l border-r border-navborder flex-1 bg-active h-full flex items-center justify-center"
+        >
+          <a routerLink="/form">offres disponibles</a>
+        </li>
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center justify-center"
+        >
+          <a routerLink="/status">vos candidatures</a>
+        </li>
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center justify-center"
+        >
+          votre cv
+        </li>
+        <li
+          class="border-l border-r border-navborder flex-1 h-full flex items-center relative justify-center"
+        >
+          <div class="absolute border-x border-navborder h-full right-[calc(15%)]"></div>
+          parametres
+        </li>
+      </ul>
+    </div>
+    <div class="border-2 border-gray-500"></div>
+  </nav>
+</header>
+<!-- end of header -->
+
+<!-- hero section start -->
+<section class="relative w-9/10 font-sans h-44 outline mx-auto p-0">
+  <span
+    class="absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-200 z-10"
+  >
+    <i class="fa-solid fa-angle-left"></i>
+  </span>
+  <img
+    src="/assets/taylor-grote-415993-unsplash2.png"
+    alt="Description"
+    class="object-fit w-full h-full"
+  />
+  <span
+    class="absolute right-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-200 z-10"
+  >
+    <i class="fa-solid fa-angle-right"></i>
+  </span>
+  <div
+    class="absolute top-0 transform left-32 z-10 h-55 w-83 bg-smallBtn flex flex-col items-start"
+  >
+    <div class="w-3/4 h-1/4 mb-2 mt-12 ml-10">
+      <p class="text-gray-200 text-5xl">|</p>
+    </div>
+    <div class="text-wrap text-left text-gray-200 w-3/4 h-1/2 ml-10">
+      <p>Programme de</p>
+      <p>recrutement de</p>
+      <p>jeunes cadres</p>
+    </div>
+  </div>
+</section>
+<!-- end of hero section -->
+
+<!-- form section -->
+<form action="">
+  <section class="w-4/5 font-sans mx-auto mt-24 bg-white">
+    <p>Offres disponibles > Offre #324</p>
+    <p class="text-30 leading-33 mt-2">
+      <span class="text-smallBtn">|</span> Offre #324: International Marketing
+      Project Manager H/F
+    </p>
+    <div class="mt-8" action="">
+      <div class="w-full mb-4">
+        <label for="name" class="text-form text-xs uppercase">Nom</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="w-2/4 h-10 border border-input"
+        />
+      </div>
+      <div class="w-full mb-4">
+        <label for="surname" class="text-form text-xs uppercase">prénom</label
+        ><br />
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          class="w-2/4 h-10 border border-input"
+        />
+      </div>
+      <div class="w-2/4 flex justify-between mb-4">
+        <div class="w-2/4 pr-2">
+          <label for="birth_date" class="text-form text-xs uppercase"
+            >Date de naissance</label
+          ><br />
+          <input
+            type="date"
+            id="birth_date"
+            name="birth_date"
+            class="w-full h-10 border border-input"
+          />
+        </div>
+        <div class="w-2/4 pl-2">
+          <label for="birth_place" class="text-form text-xs uppercase"
+            >lieu de naissance</label
+          ><br />
+          <input
+            type="text"
+            id="birth_place"
+            name="birth_place"
+            class="w-full h-10 border border-input"
+          />
+        </div>
+      </div>
+      <div class="w-full mb-4">
+        <label for="email" class="text-form text-xs uppercase"
+          >ADRESSE E-MAIL</label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-2/4 h-10 border border-input"
+        />
+      </div>
+      <div class="w-full mb-4">
+        <label for="level" class="text-form text-xs uppercase"
+          >NIVEAU D'ÉTUDES</label
+        ><br />
+        <input
+          type="text"
+          id="level"
+          name="email"
+          class="w-2/4 h-10 border border-input"
+        />
+      </div>
+      <div class="w-full mb-6">
+        <label for="domain" class="text-form text-xs uppercase"
+          >domaine d'etudes</label
+        ><br />
+        <input
+          type="text"
+          id="domain"
+          name="email"
+          class="w-2/4 h-10 border border-input"
+        />
+      </div>
+
+      <div class="w-full border border-lighter"></div>
+
+      <div class="mb-4 mt-6 w-full flex items-center">
+        <label for="cv" class="h-6 mr-8 text-base text-black border"
+          >Telecharger votre CV:</label
+        >
+        <input
+          type="text"
+          name="upload"
+          class="h-9 w-56 border border-navborder font-medium bg-light text-black"
+        />
+        <input type="file" id="file-input" class="hidden" />
+        <label
+          for="file-input"
+          class="ml-6 w-28 h-9 bg-smallBtn text-white flex items-center justify-center text-center cursor-pointer"
+        >
+          Upload
+        </label>
+        <p
+          class="text-sm text-black border-t ml-6 border-l w-28 py-2 pl-4 border-b border-three"
+        >
+          APPERÇU
+        </p>
+      </div>
+      <div class="w-full border border-lighter"></div>
+
+      <h6 class="text-base text-black font-medium mt-6 mb-4">
+        Entrer vos differentes experiences professionnelles:
+      </h6>
+
+      <div class="w-full mb-4 border border-lighter shadow-sm">
+        <table class="border w-full">
+          <thead class="text-formtable text-xs uppercase w-full">
+            <tr class="w-full">
+              <th class="w-1/12 p-4">debut</th>
+              <th class="w-1/12 p-4">fin</th>
+              <th class="w-2/12 p-4">intitulé du poste</th>
+              <th class="w-4/12 p-4">DESCRIPTION ET RÉALISATION</th>
+              <th class="w-2/12 p-4">société</th>
+              <th class="w-2/12 p-4"></th>
+            </tr>
+          </thead>
+          <tbody class="w-full text-sm divide-y-2">
+            <tr class="w-full bg-light text-center space-y-2 m-4 text-black">
+              <td class="w-1/12 p-4">Jan 2015</td>
+              <td class="w-1/12 p-4">Mars 2018</td>
+              <td class="w-2/12 p-4">Contrôleur de Gestion</td>
+              <td class="w-5/12 p-4">
+                Déploiement de la stratégie financière définie par la Direction.
+                Contrôle et gestion prévisionnelle des coûts, analyse des écarts
+              </td>
+              <td class="w-2/12 p-4">BANQUE POPULAIRE</td>
+              <td class="w-1/12 p-4">
+                <div class="flex items-center justify-evenly">
+                  <span
+                    ><img src="/assets/Group 20.png" alt="edit logo"
+                  /></span>
+                  <span
+                    ><img src="/assets/Group 21.png" alt="edit logo"
+                  /></span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button
+          class="text-center text-smallBtn text-14 leading-20 w-full my-3"
+        >
+          + AJOUTER
+        </button>
+      </div>
+
+      <div class="w-full my-4 border border-lighter"></div>
+
+      <div class="w-full flex justify-between">
+        <div class="w-1/2 pr-4">
+          <label class="text-black text-base"
+            >En quelques mots, declinez vos motivations, intérêts et
+            perspectives concernant ce poste:</label
+          >
+          <textarea class="border border-input w-full h-32"></textarea>
+        </div>
+        <div class="w-1/2 pl-4">
+          <div class="flex w-full items-center justify-between">
+            <label class="nl-5">Ajoutez des documents si necessaires:</label>
+            <label
+              for="file-input"
+              class="ml-6 w-28 h-9 bg-smallBtn text-white flex items-center justify-center text-center cursor-pointer"
+            >
+              Upload
+            </label>
+            <input type="file" id="file-input" class="hidden" />
+          </div>
+
+          <div class="flex justify-end relative">
+            <input
+              type="text"
+              name="upload"
+              value="1. TOETC_test_results.pdf"
+              class="h-14 w-3/4 mt-4 pl-5 text-left border border-navborder text-base"
+            />
+            <span class="absolute z-10 top-[calc(20%+10px)] right-4"
+              ><img src="assets/x.png" alt="close"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="w-full my-8 shadow p-4 border border-lighter">
+    <div class="w-full flex mt-4 mb-8 items-center justify-center">
+      <button
+        class="w-40 h-10 mr-2 uppercase bg-smallBtn text-white text-sm border border-lighter shadow-sm"
+      >
+        valider
+      </button>
+      <button
+        class="w-100 h-10 uppercase ml-2  text-sm text-black border border-lighter shadow-sm"
+      >
+        sauvegarder les modifications
+      </button>
+    </div>
+  </div>
+</form>
+
+<!-- footer section -->
+<footer class="w-full h-91 font-sans bg-light mb-4">
+  <div class="w-full h-2/3 ml-10 flex flex-col justify-around">
+    <h4 class="text-footer mt-4">NOUS CONTACTER</h4>
+    <p class="">
+      Nous appeler : <a href="tel:(242) 06 504 22 22">(242) 06 504 22 22</a>
+    </p>
+    <p>
+      Nous écrire :
+      <a href="mailto:sgc.qualite@socgen.com">sgc.qualite&#64;socgen.com</a>
+    </p>
+    <p>Trouver une agence</p>
+  </div>
+  <div class="w-full h-1/3 mt-5 relative">
+    <img
+      src="/assets/Bitmap-footer.png"
+      alt="footer picture"
+      class="object-cover w-full h-full"
+    />
+    <span class="absolute top-[calc(0%-25px)] left-[calc(50%-15px)]"
+      ><img src="/assets/Group 15.png" alt="top"
+    /></span>
+  </div>
+</footer>
+<!-- footer section end -->
